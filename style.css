@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: sans-serif;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+img{
+  width: 360px;
+  height: 75px;
+  cursor: pointer;
+}
+section{
+  width: 360px;
+  height: 355px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  box-shadow: 0.5px 0.5px 2px #b5b6b6, -0.5px -0.5px 2px #b5b6b6;
+}
+.input_area{
+  width: 330px;
+  height: 355px;
+  background-color: transparent !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header_text{
+    width: 320px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent !important;
+    font-size: 16px;
+    color: #1c1e21
+}
+.input_data{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 12px;
+}
+:is(.email, .password){
+  width: 330px;
+  height: 48px;
+  border: 1.5px solid rgba(136, 138, 135, 0.5);
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 12px;
+  outline: none;
+  font-size: 17px;
+  letter-spacing: 0.5;
+  font-family:sans-serif;
+}
+::-webkit-input-placeholder{
+  color: rgba(109, 116, 206, 0.5);
+  font-size: 15px;
+}
+:is(.email, .password):focus{
+  box-sizing: border-box;
+  border: none;
+  outline: 0.1px solid #1877F2;
+  box-shadow: 0.5px 0.5px 1px #1877F2, -0.5px 0.5px 1px #1877F2;
+}
+.log_in_btn{
+  border: none;
+  width: 330px;
+  height: 43px;
+  background-color: #1877F2;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.log_in_btn:hover{
+  background-color: #1972e6;
+  transition: 0.3s;
+}
+.forgotten_account_text{
+  width: 340px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent !important;
+  border-bottom: 1px solid rgba(136, 138, 136, 0.5);
+} 
+.forgotten_account_text a{
+  padding: 5px;
+  font-size: 14px;
+  color: #1777F2;
+  padding: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.forgotten_account_text a:hover{
+  text-decoration: underline;
+}
+.Or_text{
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.Or_text span{
+  width: 40px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(49, 49, 49, 0.6);
+  font-size: 12px;
+  cursor:auto;
+}
+.Create_account_button{
+  border: none;
+  width: 175px;
+  height: 43px;
+  background-color: #24b62b;
+  margin-top: 21px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+.Create_account_button:hover{
+  background-color: #1f9624;
+  transition: 0.3s;
+}
+
+
